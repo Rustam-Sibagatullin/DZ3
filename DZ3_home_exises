@@ -1,0 +1,527 @@
+Script started on Wed 12 Feb 2020 02:31:15 PM UTC
+]0;root@lvm:~[?1034h[root@lvm ~]# ll
+total 16
+-rw-------. 1 root root 5763 May 12  2018 anaconda-ks.cfg
+-rw-r--r--. 1 root root    0 Feb 12 14:31 DZ3_home_exises
+-rw-------. 1 root root 5432 May 12  2018 original-ks.cfg
+]0;root@lvm:~[root@lvm ~]# pwd
+/root
+]0;root@lvm:~[root@lvm ~]# yum install xfsdump
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: centos-mirror.rbc.ru
+ * extras: mirror.yandex.ru
+ * updates: mirror.yandex.ru
+Resolving Dependencies
+--> Running transaction check
+---> Package xfsdump.x86_64 0:3.1.7-1.el7 will be installed
+--> Processing Dependency: attr >= 2.0.0 for package: xfsdump-3.1.7-1.el7.x86_64
+--> Running transaction check
+---> Package attr.x86_64 0:2.4.46-13.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+========================================================================================================================================================================
+ Package                                Arch                                  Version                                         Repository                           Size
+========================================================================================================================================================================
+Installing:
+ xfsdump                                x86_64                                3.1.7-1.el7                                     base                                308 k
+Installing for dependencies:
+ attr                                   x86_64                                2.4.46-13.el7                                   base                                 66 k
+
+Transaction Summary
+========================================================================================================================================================================
+Install  1 Package (+1 Dependent package)
+
+Total download size: 374 k
+Installed size: 1.1 M
+Is this ok [y/d/N]: y
+Downloading packages:
+(1/2): attr-2.4.46-13.el7.x86_64.rpm                                                                                                             |  66 kB  00:00:00     
+(2/2): xfsdump-3.1.7-1.el7.x86_64.rpm                                 17% [==========                                                 ]  0.0 B/s |  66 kB  --:--:-- ETA (2/2): xfsdump-3.1.7-1.el7.x86_64.rpm                                                                                                            | 308 kB  00:00:00     
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Total                                                                                                                                   732 kB/s | 374 kB  00:00:00     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : attr-2.4.46-13.el7.x86_64 [                                                                                                                        ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [#######                                                                                                                 ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [#####################                                                                                                   ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [################################                                                                                        ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [####################################                                                                                    ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [################################################                                                                        ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [##################################################                                                                      ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [###################################################                                                                     ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [############################################################                                                            ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [###############################################################                                                         ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [###########################################################################                                             ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [############################################################################                                            ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [##############################################################################                                          ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [################################################################################                                        ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [#####################################################################################                                   ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [########################################################################################                                ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [############################################################################################                            ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [#################################################################################################                       ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [####################################################################################################                    ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [########################################################################################################                ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [#############################################################################################################           ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [################################################################################################################        ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [###################################################################################################################     ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [####################################################################################################################    ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [#####################################################################################################################   ] 1/2  Installing : attr-2.4.46-13.el7.x86_64 [######################################################################################################################  ] 1/2  Installing : attr-2.4.46-13.el7.x86_64                                                                                                                            1/2 
+  Installing : xfsdump-3.1.7-1.el7.x86_64 [                                                                                                                       ] 2/2  Installing : xfsdump-3.1.7-1.el7.x86_64 [#######                                                                                                                ] 2/2  Installing : xfsdump-3.1.7-1.el7.x86_64 [###############                                                                                                        ] 2/2  Installing : xfsdump-3.1.7-1.el7.x86_64 [#######################                                                                                                ] 2/2  Installing : xfsdump-3.1.7-1.el7.x86_64 [##############################                                                                                         ] 2/2  Installing : xfsdump-3.1.7-1.el7.x86_64 [###################################                                                                                    ] 2/2  Installing : xfsdump-3.1.7-1.el7.x86_64 [############################################                                                                           ] 2/2  Installing : xfsdump-3.1.7-1.el7.x86_64 [####################################################                                                                   ] 2/2  Installing : xfsdump-3.1.7-1.el7.x86_64 [###########################################################                                                            ] 2/2  Installing : xfsdump-3.1.7-1.el7.x86_64 [###################################################################                                                    ] 2/2  Installing : xfsdump-3.1.7-1.el7.x86_64 [############################################################################                                           ] 2/2  Installing : xfsdump-3.1.7-1.el7.x86_64 [###################################################################################                                    ] 2/2  Installing : xfsdump-3.1.7-1.el7.x86_64 [########################################################################################                               ] 2/2  Installing : xfsdump-3.1.7-1.el7.x86_64 [###########################################################################################                            ] 2/2  Installing : xfsdump-3.1.7-1.el7.x86_64 [##############################################################################################                         ] 2/2  Installing : xfsdump-3.1.7-1.el7.x86_64 [###############################################################################################                        ] 2/2  Installing : xfsdump-3.1.7-1.el7.x86_64 [######################################################################################################                 ] 2/2  Installing : xfsdump-3.1.7-1.el7.x86_64 [#########################################################################################################              ] 2/2  Installing : xfsdump-3.1.7-1.el7.x86_64 [#################################################################################################################      ] 2/2  Installing : xfsdump-3.1.7-1.el7.x86_64 [###################################################################################################################    ] 2/2  Installing : xfsdump-3.1.7-1.el7.x86_64 [####################################################################################################################   ] 2/2  Installing : xfsdump-3.1.7-1.el7.x86_64 [#####################################################################################################################  ] 2/2  Installing : xfsdump-3.1.7-1.el7.x86_64                                                                                                                           2/2 
+  Verifying  : attr-2.4.46-13.el7.x86_64                                                                                                                            1/2 
+  Verifying  : xfsdump-3.1.7-1.el7.x86_64                                                                                                                           2/2 
+
+Installed:
+  xfsdump.x86_64 0:3.1.7-1.el7                                                                                                                                          
+
+Dependency Installed:
+  attr.x86_64 0:2.4.46-13.el7                                                                                                                                           
+
+Complete!
+]0;root@lvm:~[root@lvm ~]# lsblk
+NAME                    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sda                       8:0    0   40G  0 disk 
+├─sda1                    8:1    0    1M  0 part 
+├─sda2                    8:2    0    1G  0 part /boot
+└─sda3                    8:3    0   39G  0 part 
+  ├─VolGroup00-LogVol00 253:0    0 37.5G  0 lvm  /
+  └─VolGroup00-LogVol01 253:1    0  1.5G  0 lvm  [SWAP]
+sdb                       8:16   0   10G  0 disk 
+sdc                       8:32   0    2G  0 disk 
+sdd                       8:48   0    1G  0 disk 
+sde                       8:64   0    1G  0 disk 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]#  pvcreate /dev/sdb
+  Physical volume "/dev/sdb" successfully created.
+]0;root@lvm:~[root@lvm ~]#  vgcreate vg_root /dev/sdb
+  Volume group "vg_root" successfully created
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# vgs
+  VG         #PV #LV #SN Attr   VSize   VFree  
+  VolGroup00   1   2   0 wz--n- <38.97g      0 
+  vg_root      1   0   0 wz--n- <10.00g <10.00g
+]0;root@lvm:~[root@lvm ~]# pvdsi[K[Kisplay 
+  --- Physical volume ---
+  PV Name               /dev/sda3
+  VG Name               VolGroup00
+  PV Size               <39.00 GiB / not usable 30.00 MiB
+  Allocatable           yes (but full)
+  PE Size               32.00 MiB
+  Total PE              1247
+  Free PE               0
+  Allocated PE          1247
+  PV UUID               vrrtbx-g480-HcJI-5wLn-4aOf-Olld-rC03AY
+   
+  --- Physical volume ---
+  PV Name               /dev/sdb
+  VG Name               vg_root
+  PV Size               10.00 GiB / not usable 4.00 MiB
+  Allocatable           yes 
+  PE Size               4.00 MiB
+  Total PE              2559
+  Free PE               2559
+  Allocated PE          0
+  PV UUID               vjjkbP-6N53-DbmZ-Bq0d-aIhS-7Y5l-g545rm
+   
+]0;root@lvm:~[root@lvm ~]# lvs
+  LV       VG         Attr       LSize   Pool Origin Data%  Meta%  Move Log Cpy%Sync Convert
+  LogVol00 VolGroup00 -wi-ao---- <37.47g                                                    
+  LogVol01 VolGroup00 -wi-ao----   1.50g                                                    
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# lvdisplay 
+  --- Logical volume ---
+  LV Path                /dev/VolGroup00/LogVol00
+  LV Name                LogVol00
+  VG Name                VolGroup00
+  LV UUID                j6b8IV-KEw3-7bTw-Oqy8-1Ud3-juFC-SJBg12
+  LV Write Access        read/write
+  LV Creation host, time localhost.localdomain, 2018-05-12 18:50:24 +0000
+  LV Status              available
+  # open                 1
+  LV Size                <37.47 GiB
+  Current LE             1199
+  Segments               1
+  Allocation             inherit
+  Read ahead sectors     auto
+  - currently set to     8192
+  Block device           253:0
+   
+  --- Logical volume ---
+  LV Path                /dev/VolGroup00/LogVol01
+  LV Name                LogVol01
+  VG Name                VolGroup00
+  LV UUID                IAjIC6-ScnM-tvH6-7BTy-TN31-hd82-bgDSzd
+  LV Write Access        read/write
+  LV Creation host, time localhost.localdomain, 2018-05-12 18:50:25 +0000
+  LV Status              available
+  # open                 2
+  LV Size                1.50 GiB
+  Current LE             48
+  Segments               1
+  Allocation             inherit
+  Read ahead sectors     auto
+  - currently set to     8192
+  Block device           253:1
+   
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# lvcreate -n lv_root -l +100%FREE /dev/vg_root
+  Logical volume "lv_root" created.
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# lvcreate -n lv_root -l +100%FREE /dev/vg_root[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdisplay [K
+  --- Logical volume ---
+  LV Path                /dev/VolGroup00/LogVol00
+  LV Name                LogVol00
+  VG Name                VolGroup00
+  LV UUID                j6b8IV-KEw3-7bTw-Oqy8-1Ud3-juFC-SJBg12
+  LV Write Access        read/write
+  LV Creation host, time localhost.localdomain, 2018-05-12 18:50:24 +0000
+  LV Status              available
+  # open                 1
+  LV Size                <37.47 GiB
+  Current LE             1199
+  Segments               1
+  Allocation             inherit
+  Read ahead sectors     auto
+  - currently set to     8192
+  Block device           253:0
+   
+  --- Logical volume ---
+  LV Path                /dev/VolGroup00/LogVol01
+  LV Name                LogVol01
+  VG Name                VolGroup00
+  LV UUID                IAjIC6-ScnM-tvH6-7BTy-TN31-hd82-bgDSzd
+  LV Write Access        read/write
+  LV Creation host, time localhost.localdomain, 2018-05-12 18:50:25 +0000
+  LV Status              available
+  # open                 2
+  LV Size                1.50 GiB
+  Current LE             48
+  Segments               1
+  Allocation             inherit
+  Read ahead sectors     auto
+  - currently set to     8192
+  Block device           253:1
+   
+  --- Logical volume ---
+  LV Path                /dev/vg_root/lv_root
+  LV Name                lv_root
+  VG Name                vg_root
+  LV UUID                9LgmI0-QmGv-EzK0-xlO8-oys2-zVwe-1i2p4H
+  LV Write Access        read/write
+  LV Creation host, time lvm, 2020-02-12 14:33:06 +0000
+  LV Status              available
+  # open                 0
+  LV Size                <10.00 GiB
+  Current LE             2559
+  Segments               1
+  Allocation             inherit
+  Read ahead sectors     auto
+  - currently set to     8192
+  Block device           253:2
+   
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# lsblk 
+NAME                    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sda                       8:0    0   40G  0 disk 
+├─sda1                    8:1    0    1M  0 part 
+├─sda2                    8:2    0    1G  0 part /boot
+└─sda3                    8:3    0   39G  0 part 
+  ├─VolGroup00-LogVol00 253:0    0 37.5G  0 lvm  /
+  └─VolGroup00-LogVol01 253:1    0  1.5G  0 lvm  [SWAP]
+sdb                       8:16   0   10G  0 disk 
+└─vg_root-lv_root       253:2    0   10G  0 lvm  
+sdc                       8:32   0    2G  0 disk 
+sdd                       8:48   0    1G  0 disk 
+sde                       8:64   0    1G  0 disk 
+]0;root@lvm:~[root@lvm ~]#  mkfs.xfs /dev/vg_root/lv_root
+meta-data=/dev/vg_root/lv_root   isize=512    agcount=4, agsize=655104 blks
+         =                       sectsz=512   attr=2, projid32bit=1
+         =                       crc=1        finobt=0, sparse=0
+data     =                       bsize=4096   blocks=2620416, imaxpct=25
+         =                       sunit=0      swidth=0 blks
+naming   =version 2              bsize=4096   ascii-ci=0 ftype=1
+log      =internal log           bsize=4096   blocks=2560, version=2
+         =                       sectsz=512   sunit=0 blks, lazy-count=1
+realtime =none                   extsz=4096   blocks=0, rtextents=0
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]#  mount /dev/vg_root/lv_rooScript started on Wed 12 Feb 2020 02:42:07 PM UTC
+]0;root@lvm:~[?1034h[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# lsblk
+NAME                    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sda                       8:0    0   40G  0 disk 
+├─sda1                    8:1    0    1M  0 part 
+├─sda2                    8:2    0    1G  0 part /boot
+└─sda3                    8:3    0   39G  0 part 
+  ├─VolGroup00-LogVol01 253:1    0  1.5G  0 lvm  [SWAP]
+  └─VolGroup00-LogVol00 253:2    0 37.5G  0 lvm  
+sdb                       8:16   0   10G  0 disk 
+└─vg_root-lv_root       253:0    0   10G  0 lvm  /
+sdc                       8:32   0    2G  0 disk 
+sdd                       8:48   0    1G  0 disk 
+sde                       8:64   0    1G  0 disk 
+]0;root@lvm:~[root@lvm ~]# lvs
+  LV       VG         Attr       LSize   Pool Origin Data%  Meta%  Move Log Cpy%Sync Convert
+  LogVol00 VolGroup00 -wi-a----- <37.47g                                                    
+  LogVol01 VolGroup00 -wi-ao----   1.50g                                                    
+  lv_root  vg_root    -wi-ao---- <10.00g                                                    
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# lvremove /dev/VolGroup00/LogVol00
+Do you really want to remove active logical volume VolGroup00/LogVol00? [y/n]: y
+  Logical volume "LogVol00" successfully removed
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# lvremove /dev/VolGroup00/LogVol00[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cs[K
+  LV       VG         Attr       LSize   Pool Origin Data%  Meta%  Move Log Cpy%Sync Convert
+  LogVol01 VolGroup00 -wi-ao----   1.50g                                                    
+  lv_root  vg_root    -wi-ao---- <10.00g                                                    
+]0;root@lvm:~[root@lvm ~]# lvsremove /dev/VolGroup00/LogVol00[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cs[Ksblk
+NAME                    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sda                       8:0    0   40G  0 disk 
+├─sda1                    8:1    0    1M  0 part 
+├─sda2                    8:2    0    1G  0 part /boot
+└─sda3                    8:3    0   39G  0 part 
+  └─VolGroup00-LogVol01 253:1    0  1.5G  0 lvm  [SWAP]
+sdb                       8:16   0   10G  0 disk 
+└─vg_root-lv_root       253:0    0   10G  0 lvm  /
+sdc                       8:32   0    2G  0 disk 
+sdd                       8:48   0    1G  0 disk 
+sde                       8:64   0    1G  0 disk 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# lvcreate -n VolGroup00/LogVol00 -L 8G /dev/VolGroup00
+WARNING: xfs signature detected on /dev/VolGroup00/LogVol00 at offset 0. Wipe it? [y/n]: y
+  Wiping xfs signature on /dev/VolGroup00/LogVol00.
+  Logical volume "LogVol00" created.
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# lvcreate -n VolGroup00/LogVol00 -L 8G /dev/VolGroup00[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csblk[K[2Pvs
+  LV       VG         Attr       LSize   Pool Origin Data%  Meta%  Move Log Cpy%Sync Convert
+  LogVol00 VolGroup00 -wi-a-----   8.00g                                                    
+  LogVol01 VolGroup00 -wi-ao----   1.50g                                                    
+  lv_root  vg_root    -wi-ao---- <10.00g                                                    
+]0;root@lvm:~[root@lvm ~]# lvscreate -n VolGroup00/LogVol00 -L 8G /dev/VolGroup00[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csblk[K
+NAME                    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sda                       8:0    0   40G  0 disk 
+├─sda1                    8:1    0    1M  0 part 
+├─sda2                    8:2    0    1G  0 part /boot
+└─sda3                    8:3    0   39G  0 partScript started on Wed 12 Feb 2020 02:59:28 PM UTC
+]0;root@lvm:~[?1034h[root@lvm ~]# exitlsblk skk 
+NAME                     MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sda                        8:0    0   40G  0 disk 
+├─sda1                     8:1    0    1M  0 part 
+├─sda2                     8:2    0    1G  0 part /boot
+└─sda3                     8:3    0   39G  0 part 
+  ├─VolGroup00-LogVol00  253:0    0    8G  0 lvm  /
+  └─VolGroup00-LogVol01  253:1    0  1.5G  0 lvm  [SWAP]
+sdb                        8:16   0   10G  0 disk 
+└─vg_root-lv_root        253:2    0   10G  0 lvm  
+sdc                        8:32   0    2G  0 disk 
+├─vg_var-lv_var_rmeta_0  253:3    0    4M  0 lvm  
+│ └─vg_var-lv_var        253:7    0  952M  0 lvm  /var
+└─vg_var-lv_var_rimage_0 253:4    0  952M  0 lvm  
+  └─vg_var-lv_var        253:7    0  952M  0 lvm  /var
+sdd                        8:48   0    1G  0 disk 
+├─vg_var-lv_var_rmeta_1  253:5    0    4M  0 lvm  
+│ └─vg_var-lv_var        253:7    0  952M  0 lvm  /var
+└─vg_var-lv_var_rimage_1 253:6    0  952M  0 lvm  
+  └─vg_var-lv_var        253:7    0  952M  0 lvm  /var
+sde                        8:64   0    1G  0 disk 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# lvremove /dev/vg_root/lv_root
+Do you really want to remove active logical volume vg_root/lv_root? [y/n]: y
+  Logical volume "lv_root" successfully removed
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# vgremove /dev/vg_root
+  Volume group "vg_root" successfully removed
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# pvremove /dev/sdb
+  Labels on physical volume "/dev/sdb" successfully wiped.
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# lvcreate -n LogVol_Home -L 2G /dev/VolGroup00[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Klvs
+  LV       VG         Attr       LSize   Pool Origin Data%  Meta%  Move Log Cpy%Sync Convert
+  LogVol00 VolGroup00 -wi-ao----   8.00g                                                    
+  LogVol01 VolGroup00 -wi-ao----   1.50g                                                    
+  lv_var   vg_var     rwi-aor--- 952.00m                                    100.00          
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# lvcreate -n LogVol_Home -L 2G /dev/VolGroup00
+  Logical volume "LogVol_Home" created.
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# lvs
+  LV          VG         Attr       LSize   Pool Origin Data%  Meta%  Move Log Cpy%Sync Convert
+  LogVol00    VolGroup00 -wi-ao----   8.00g                                                    
+  LogVol01    VolGroup00 -wi-ao----   1.50g                                                    
+  LogVol_Home VolGroup00 -wi-a-----   2.00g                                                    
+  lv_var      vg_var     rwi-aor--- 952.00m                                    100.00          
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# mkfs.xfs /dev/VolGroup00/LogVol_Home
+meta-data=/dev/VolGroup00/LogVol_Home isize=512    agcount=4, agsize=131072 blks
+         =                       sectsz=512   attr=2, projid32bit=1
+         =                       crc=1        finobt=0, sparse=0
+data     =                       bsize=4096   blocks=524288, imaxpct=25
+         =                       sunit=0      swidth=0 blks
+naming   =version 2              bsize=4096   ascii-ci=0 ftype=1
+log      =internal log           bsize=4096   blocks=2560, version=2
+         =                       sectsz=512   sunit=0 blks, lazy-count=1
+realtime =none                   extsz=4096   blocks=0, rtextents=0
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# mount /dev/VolGroup00/LogVol_Home /mnt/
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# cp -aR /home/* /mnt/   [K[K[K
+]0;root@lvm:~[root@lvm ~]# ll /home/
+total 0
+drwx------. 3 vagrant vagrant 74 May 12  2018 [0m[38;5;27mvagrant[0m
+]0;root@lvm:~[root@lvm ~]# rm -rf /home/*
+]0;root@lvm:~[root@lvm ~]# umount /mnt
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# mount /dev/VolGroup00/LogVol_Home /home/
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# ll /etc/
+Display all 188 possibilities? (y or n)
+[root@lvm ~]# ll /etc/fstab [K 
+-rw-r--r--. 1 root root 548 Feb 12 14:53 /etc/fstab
+]0;root@lvm:~[root@lvm ~]# ll hom[K[K[K/home/
+total 0
+drwx------. 3 vagrant vagrant 74 May 12  2018 [0m[38;5;27mvagrant[0m
+]0;root@lvm:~[root@lvm ~]# echo "`blkid | grep Home | awk '{print $2}'` /home xfs defaults 0 0" >> /etc/fstab/home
+bash: /etc/fstab/home: Not a directory
+]0;root@lvm:~[root@lvm ~]# echo "`blkid | grep Home | awk '{print $2}'` /home xfs defaults 0 0" >> /etc/fstab/home[K[K[K[K[K
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# echo "`blkid | grep Home | awk '{print $2}'` /home xfs defaults 0 0" >> /etc/fstab/home[C[C[C[C[C[C[C[C[C[C[C[C[C[Cll /home/[Ketc/fstab 
+-rw-r--r--. 1 root root 615 Feb 12 15:05 /etc/fstab
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# touch /home/file{1..20}
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# ll /home/
+total 0
+-rw-r--r--. 1 root    root     0 Feb 12 15:06 file1
+-rw-r--r--. 1 root    root     0 Feb 12 15:06 file10
+-rw-r--r--. 1 root    root     0 Feb 12 15:06 file11
+-rw-r--r--. 1 root    root     0 Feb 12 15:06 file12
+-rw-r--r--. 1 root    root     0 Feb 12 15:06 file13
+-rw-r--r--. 1 root    root     0 Feb 12 15:06 file14
+-rw-r--r--. 1 root    root     0 Feb 12 15:06 file15
+-rw-r--r--. 1 root    root     0 Feb 12 15:06 file16
+-rw-r--r--. 1 root    root     0 Feb 12 15:06 file17
+-rw-r--r--. 1 root    root     0 Feb 12 15:06 file18
+-rw-r--r--. 1 root    root     0 Feb 12 15:06 file19
+-rw-r--r--. 1 root    root     0 Feb 12 15:06 file2
+-rw-r--r--. 1 root    root     0 Feb 12 15:06 file20
+-rw-r--r--. 1 root    root     0 Feb 12 15:06 file3
+-rw-r--r--. 1 root    root     0 Feb 12 15:06 file4
+-rw-r--r--. 1 root    root     0 Feb 12 15:06 file5
+-rw-r--r--. 1 root    root     0 Feb 12 15:06 file6
+-rw-r--r--. 1 root    root     0 Feb 12 15:06 file7
+-rw-r--r--. 1 root    root     0 Feb 12 15:06 file8
+-rw-r--r--. 1 root    root     0 Feb 12 15:06 file9
+drwx------. 3 vagrant vagrant 74 May 12  2018 [0m[38;5;27mvagrant[0m
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# lvcreate -L 100MB -s -n home_snap /dev/VolGroup00/LogVol_Home[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Klvcreate -L 100MB -s -n home_snap /dev/VolGroup00/LogVol_Home[1P /dev/VolGroup00/LogVol_Home[1P /dev/VolGroup00/LogVol_Home[1P /dev/VolGroup00/LogVol_Home[1P /dev/VolGroup00/LogVol_Home[1P /dev/VolGroup00/LogVol_Home[1P /dev/VolGroup00/LogVol_Home[1P /dev/VolGroup00/LogVol_Home[1P /dev/VolGroup00/LogVol_Home[1P /dev/VolGroup00/LogVol_Home[1P/dev/VolGroup00/LogVol_Home[1P /dev/VolGroup00/LogVol_Home[1P /dev/VolGroup00/LogVol_Home[1P/dev/VolGroup00/LogVol_Home[1P /dev/VolGroup00/LogVol_Home[1P /dev/VolGroup00/LogVol_Home[1P/dev/VolGroup00/LogVol_Home[1P /dev/VolGroup00/LogVol_Home[1P /dev/VolGroup00/LogVol_Home[1P /dev/VolGroup00/LogVol_Home[1P /dev/VolGroup00/LogVol_Home[1P /dev/VolGroup00/LogVol_Home[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P/dev/VolGroup00/LogVol_Home[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P /dev/VolGroup00/LogVol_Home[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P /dev/VolGroup00/LogVol_Home[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P/dev/VolGroup00/LogVol_Home[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P /dev/VolGroup00/LogVol_Home[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P /dev/VolGroup00/LogVol_Home[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P /dev/VolGroup00/LogVol_Home[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P /dev/VolGroup00/LogVol_Home[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P /dev/VolGroup00/LogVol_Home[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P /dev/VolGroup00/LogVol_Home[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P /dev/VolGroup00/LogVol_Home[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P /dev/VolGroup00/LogVol_Home[C[C[C[C[C[C[C[C[C[C[C[C[C[Cl /dev/VolGroup00/LogVol_Home[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cl /dev/VolGroup00/LogVol_Home[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+lrwxrwxrwx. 1 root root 7 Feb 12 15:01 [0m[38;5;51m/dev/VolGroup00/LogVol_Home[0m -> [48;5;232;38;5;11m../dm-2[0m
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# lvcreate -L 100MB -s -n home_snap /dev/VolGroup00/LogVol_Home
+  Rounding up size to full physical extent 128.00 MiB
+  Logical volume "home_snap" created.
+]0;root@lvm:~[root@lvm ~]# rm -f /home/file{11..20}
+]0;root@lvm:~[root@lvm ~]# ll /home/
+total 0
+-rw-r--r--. 1 root    root     0 Feb 12 15:06 file1
+-rw-r--r--. 1 root    root     0 Feb 12 15:06 file10
+-rw-r--r--. 1 root    root     0 Feb 12 15:06 file2
+-rw-r--r--. 1 root    root     0 Feb 12 15:06 file3
+-rw-r--r--. 1 root    root     0 Feb 12 15:06 file4
+-rw-r--r--. 1 root    root     0 Feb 12 15:06 file5
+-rw-r--r--. 1 root    root     0 Feb 12 15:06 file6
+-rw-r--r--. 1 root    root     0 Feb 12 15:06 file7
+-rw-r--r--. 1 root    root     0 Feb 12 15:06 file8
+-rw-r--r--. 1 root    root     0 Feb 12 15:06 file9
+drwx------. 3 vagrant vagrant 74 May 12  2018 [0m[38;5;27mvagrant[0m
+]0;root@lvm:~[root@lvm ~]# umount /home
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# lvconvert --merge /dev/VolGroup00/home_snap
+  Merging of volume VolGroup00/home_snap started.
+  VolGroup00/LogVol_Home: Merged: 100.00%
+]0;root@lvm:~[root@lvm ~]# mount /home
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# 
+]0;root@lvm:~[root@lvm ~]# ll /home/
+total 0
+-rw-r--r--. 1 root    root     0 Feb 12 15:06 file1
+-rw-r--r--. 1 root    root     0 Feb 12 15:06 file10
+-rw-r--r--. 1 root    root     0 Feb 12 15:06 file11
+-rw-r--r--. 1 root    root     0 Feb 12 15:06 file12
+-rw-r--r--. 1 root    root     0 Feb 12 15:06 file13
+-rw-r--r--. 1 root    root     0 Feb 12 15:06 file14
+-rw-r--r--. 1 root    root     0 Feb 12 15:06 file15
+-rw-r--r--. 1 root    root     0 Feb 12 15:06 file16
+-rw-r--r--. 1 root    root     0 Feb 12 15:06 file17
+-rw-r--r--. 1 root    root     0 Feb 12 15:06 file18
+-rw-r--r--. 1 root    root     0 Feb 12 15:06 file19
+-rw-r--r--. 1 root    root     0 Feb 12 15:06 file2
+-rw-r--r--. 1 root    root     0 Feb 12 15:06 file20
+-rw-r--r--. 1 root    root     0 Feb 12 15:06 file3
+-rw-r--r--. 1 root    root     0 Feb 12 15:06 file4
+-rw-r--r--. 1 root    root     0 Feb 12 15:06 file5
+-rw-r--r--. 1 root    root     0 Feb 12 15:06 file6
+-rw-r--r--. 1 root    root     0 Feb 12 15:06 file7
+-rw-r--r--. 1 root    root     0 Feb 12 15:06 file8
+-rw-r--r--. 1 root    root     0 Feb 12 15:06 file9
+drwx------. 3 vagrant vagrant 74 May 12  2018 [0m[38;5;27mvagrant[0m
+]0;root@lvm:~[root@lvm ~]# exit
+exit
+
+Script done on Wed 12 Feb 2020 03:09:42 PM UTC
